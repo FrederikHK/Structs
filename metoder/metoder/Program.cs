@@ -47,7 +47,7 @@ namespace metoder
                             }
                             
                         }
-                        string alias = splitName[0].Substring(0, 1) + splitName[splitName.Length - 1].Substring(0, 1);
+                        string alias = splitName[0].Substring(0, 2).ToUpper() + splitName[splitName.Length - 1].Substring(0, 2).ToUpper();
                         totalPerson = Persons(splitName[splitName.Length - 1]) + ", " + testPerson + "dit alias er: " + alias;
                         stringList.Add(totalPerson.TrimEnd());
                         if (newDictionary.ContainsKey(alias))
